@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use('/hello', function(req, res){
-  res.status(200).json({ greeting: "Hello." });
+  res.status(200).json({ greeting: "Hello" });
 });
 
 app.listen(process.env.PORT || 5000, () => {
